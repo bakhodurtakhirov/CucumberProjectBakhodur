@@ -87,6 +87,12 @@
             <version>2.17.0</version>
         </dependency>
 
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.22</version> <!-- Update to the latest version -->
+            <scope>provided</scope> <!-- Ensure provided scope to avoid conflicts -->
+        </dependency>
 
     </dependencies>
 
