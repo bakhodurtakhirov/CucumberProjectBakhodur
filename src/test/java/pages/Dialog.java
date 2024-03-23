@@ -41,7 +41,8 @@ public class Dialog extends MyMethods {
     @FindBy(xpath = "(//input[@data-placeholder=\"Name\"])[1]")
     public WebElement searchNameInput;
     
-    @FindBy(xpath = "//span[text()=\"Search\"]")
+//    @FindBy(xpath = "//span[text()=\"Search\"]")
+    @FindBy(xpath = "//*[@id=\"container-3\"]//ms-search-button")
     public WebElement searchButton;
     
     @FindBy(css = "ms-edit-button[class=\"ng-star-inserted\"]")
