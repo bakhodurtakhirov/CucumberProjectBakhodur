@@ -8,7 +8,8 @@ import io.cucumber.testng.CucumberOptions;
                 "src/test/java/featureFiles/_01_Login.feature",
                 "src/test/java/featureFiles/_02_Country.feature"
         },
-        glue = "stepDefinitions"
+        glue = "stepDefinitions",
+        plugin = {"pretty", "html:target/cucumber-pretty", "json:target/cucumber.json"} //For Jenkins Cucumber report
 //        dryRun = true // only checks if we have all necessary step definitions for our features.
         //dryRun = false // Default value. It runs the scenarios regularly.
 )
